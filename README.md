@@ -1,3 +1,3 @@
 # LittleVoices
-hello hello hello hello...........
+Problem Statement : Development of gamified platform on Children's Rights to increase legal literacy and awareness among children in India.
 
