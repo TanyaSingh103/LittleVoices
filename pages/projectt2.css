@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to right,rgb(154, 78, 154), #8bb3cf, #d8eb4f,rgb(154, 78, 154));
+    background:linear-gradient(to right,rgb(150, 198, 146), #98cdd4, #e0dfa4,rgb(215, 155, 150));
     padding-bottom:2rem;
 }
 #row-1 {
