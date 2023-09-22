@@ -48,7 +48,8 @@ const Questions = [{
 
 ]
 
-let currQuestion = 0
+
+let currQuestion = 0;
 
 let optionNumber = 0;
 
@@ -56,37 +57,21 @@ let correctAns = 0;
 
 function loadQues() {
 	const question = document.getElementById("ques")
-	// const opt = document.getElementById("opt")
 
 	question.textContent = Questions[currQuestion].q;
-	// opt.innerHTML = ""
-
-	// for (let i = 0; i < Questions[currQuestion].a.length; i++) {
-		// const choicesdiv = document.createElement("div");
-		// const choice = document.createElement("input");
-		// const choiceLabel = document.createElement("label");
-
-		// choice.type = "radio";
-		// choice.name = "answer";
-		// choice.value = i;
+	
 
 		document.getElementById("opt1").innerHTML = Questions[currQuestion].a[0].text;
         document.getElementById("opt2").innerHTML = Questions[currQuestion].a[1].text;
         document.getElementById("opt3").innerHTML = Questions[currQuestion].a[2].text;
         document.getElementById("opt4").innerHTML = Questions[currQuestion].a[3].text;
 
-		// choicesdiv.appendChild(choice);
-		// choicesdiv.appendChild(choiceLabel);
-		// opt.appendChild(choicesdiv);
-	// }
+	
 }
 
 loadQues();
 
-// function loadScore() {
-// 	const totalScore = document.getElementById("score")
-// 	totalScore.textContent = `You scored ${score} out of ${Questions.length}`
-// }
+
 
 
 function nextQuestion() {
@@ -94,12 +79,6 @@ function nextQuestion() {
 		currQuestion++;
 		loadQues();
 	} 
-    // else {
-	// 	document.getElementById("opt").remove()
-	// 	document.getElementById("ques").remove()
-	// 	document.getElementById("btn").remove()
-	// 	loadScore();
-	// 
     
 }
 
@@ -111,6 +90,10 @@ function checkAns() {
 		correctAns = 1;
 		
 	} 
+   
+    localStorage.setItem("correctAns",correctAns);
+    localStorage.setItem("currQuestion",currQuestion);
+    
     window.open("../pages/answer.html","_self");
 }
 function prevQuestion()
