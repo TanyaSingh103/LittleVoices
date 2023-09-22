@@ -48,6 +48,7 @@ const Questions = [{
 
 ]
 
+const answers = ["Drink water to stay hydrated because water helps yor body to stay cool and work properly. When it's hot, we sweat, and that makes us lose water. Drinking water helps us stay healthy and not get too hot or tired","They can also visit a local clinic or community health center that provides care regardless of a family's ability to pay. It's important because everyone deserves a chance to get better when they're sick.","You should tell a teacher or a school staff member about the dirty water immediately. They can investigate and make sure the water is safe to drink. Clean drinking water is essential to stay healthy because dirty water can make you sick."]
 
 let currQuestion = 0;
 
@@ -61,10 +62,10 @@ function loadQues() {
 	question.textContent = Questions[currQuestion].q;
 	
 
-		document.getElementById("opt1").innerHTML = Questions[currQuestion].a[0].text;
-        document.getElementById("opt2").innerHTML = Questions[currQuestion].a[1].text;
-        document.getElementById("opt3").innerHTML = Questions[currQuestion].a[2].text;
-        document.getElementById("opt4").innerHTML = Questions[currQuestion].a[3].text;
+		document.getElementById("opt1").value = Questions[currQuestion].a[0].text;
+        document.getElementById("opt2").value = Questions[currQuestion].a[1].text;
+        document.getElementById("opt3").value = Questions[currQuestion].a[2].text;
+        document.getElementById("opt4").value = Questions[currQuestion].a[3].text;
 
 	
 }
@@ -82,7 +83,7 @@ function nextQuestion() {
     
 }
 
-function checkAns() {
+// function checkAns() {
 	
 
 	if (Questions[currQuestion].a[optionNumber].isCorrect) {
@@ -91,10 +92,28 @@ function checkAns() {
 		
 	} 
    
-    localStorage.setItem("correctAns",correctAns);
-    localStorage.setItem("currQuestion",currQuestion);
+//     localStorage.setItem("correctAns",correctAns);
+//     localStorage.setItem("currQuestion",currQuestion);
     
-    window.open("../pages/answer.html","_self");
+//     window.open("../pages/answer.html","_self");
+// }
+function checkAns()
+{
+	document.getElementById("answers").style.display = "block";
+	document.getElementById("text").innerHTML = answers[currQuestion];
+	if (Questions[currQuestion].a[optionNumber].isCorrect) {
+		
+		document.getElementById("right_wrong").innerHTML = "Correct Answer";
+		document.getElementById("right_wrong").style.color = "green";
+		
+		
+	} 
+	else
+	{
+		document.getElementById("right_wrong").innerHTML = "Wrong Answer";
+		document.getElementById("right_wrong").style.color = "red";
+		
+	}
 }
 function prevQuestion()
 {
@@ -103,7 +122,10 @@ function prevQuestion()
 		loadQues();
 	} 
 }
-
+function offClick()
+{
+	document.getElementById("answers").style.display = "none";
+}
 function returnOptionNumber(num)
 {
    optionNumber = num;
