@@ -6,7 +6,7 @@ body,html {
 }
 
 body {
-  background-image: url("../assets/bg-image.jpg");
+  background-image: url("../assets/alt-bg.jpg");
   filter: blur(20 px);
   -webkit-filter: blur(8 px);
   background-size: cover;
