@@ -1,7 +1,24 @@
 body{
     text-align:center;
-    margin:20px;
-    padding:3px;
+    margin:10px;
+    padding:0px;
+}
+div.navbar{
+    display:flex;
+    border:none;
+    margin:0px;
+    padding:10px;
+}
+img{
+    width:3%;
+    margin:0px;
+    padding:0px;
+}
+#home{
+    float:right;
+}
+#logo{
+    float:left;
 }
 div{
     border: 2px solid black;
@@ -9,7 +26,7 @@ div{
     padding:27px;
 }
 div.main-container{
-    border:none !important;
+    border:none;
     display:flex;
 }
 div.age-box{
@@ -28,11 +45,12 @@ h1{
     /* font-family: "Bookman Old Style"; */
 }
 h5{
-    font-size: large;
+    font-size: x-large;
     font-family: "Castellar";
 }
 div.option{
     /* font-family: "Georgia";  */
     font-family: "Comic Sans MS";
     font-weight: 570;
+    font-size: larger;
 }
