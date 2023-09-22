@@ -24,9 +24,35 @@
     </div>
     
     <div id="footer">
-        <h1 class="footer1">ABOUT</h1>
-        <h1 class="footer2">CONTACT US</h1>
+        <button class="footer1" onclick="about_on()">ABOUT</button>
+        <button class="footer2" onclick="contact_on()">CONTACT US</button>
     </div>
  
+    <div id="about" onclick="about_off()">
+        <div id="text">
+        <p>Welcome to our innovative gamified platform dedicated to increasing legal literacy and awareness among children in India. We believe that every child has the right to understand and exercise their rights. Our mission is to make the world of laws and rights accessible, engaging, and fun for young minds</p>
+        </div>
+    </div>
+
+    <div id="contact" onclick="contact_off()">
+        <div id="text1">Overlay Text</div>
+    </div>
+
+    <script>
+        function about_on() {
+          document.getElementById("about").style.display = "block";
+        }
+        
+        function about_off() {
+          document.getElementById("about").style.display = "none";
+        }
+        function contact_on() {
+          document.getElementById("contact").style.display = "block";
+        }
+        
+        function contact_off() {
+          document.getElementById("contact").style.display = "none";
+        }
+    </script>
 </body>
 </html>
