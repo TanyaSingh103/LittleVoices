@@ -24,7 +24,7 @@ body {
   margin-top:0.3rem;
 }
 #logo{
-  width:50%;
+  width:70%;
   height:80%;
 }
 
@@ -48,6 +48,9 @@ margin: 4% 40%;
   padding-bottom: 1.2rem;
   font-family:monospace;
 }
+.buttons button:hover{
+  transform:scale(1.2);
+}
 .content {
   text-align: center;
   z-index: 1;
@@ -57,14 +60,13 @@ margin: 4% 40%;
 
 .textbox {
   width: 40%;
-  height:40px;
-  padding: 5px;
+  padding: 1rem;
   background-color: #e1be86;
   margin: auto;
   font-size: x-large;
   color: rgb(115, 100, 100) !important;
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +83,6 @@ margin: 4% 40%;
 
 #logo{
   width:30%;
-  height:1rem;
 }
 
 .animate {
