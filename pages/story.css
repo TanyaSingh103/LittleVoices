@@ -1,0 +1,38 @@
+body{
+    text-align:center;
+    margin:20px;
+    padding:3px;
+}
+div{
+    border: 2px solid black;
+    margin:20px;
+    padding:27px;
+}
+div.main-container{
+    border:none !important;
+    display:flex;
+}
+div.age-box{
+    width:45%;
+    height:80%;
+}
+#container-1{
+    float:left;
+}
+#container-2{
+    float:right;
+}
+
+h1{
+    font-family: "Castellar";
+    /* font-family: "Bookman Old Style"; */
+}
+h5{
+    font-size: large;
+    font-family: "Castellar";
+}
+div.option{
+    /* font-family: "Georgia";  */
+    font-family: "Comic Sans MS";
+    font-weight: 570;
+}
