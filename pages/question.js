@@ -1,19 +1,19 @@
 // Questions that will be asked
 const Questions = [{
 	q: "1.Hydration: On a hot day, you're playing outside with your friends, and you start feeling thirsty. What would you drink to stay hydrated?",
-	a: [{ text: "Drink water to stay hydrated because water helps yor body to stay cool and work properly. When it's hot, we sweat, and that makes us lose water. Drinking water helps us stay healthy and not get too hot or tired", isCorrect: false },
+	a: [{ text: "Drink water to stay hydrated because water helps yor body to stay cool and work properly. When it's hot, we sweat, and that makes us lose water. Drinking water helps us stay healthy and not get too hot or tired", isCorrect: true },
 	{ text: "Surat", isCorrect: false },
-	{ text: "Delhi", isCorrect: true },
+	{ text: "Delhi", isCorrect: false },
 	{ text: "Mumbai", isCorrect: false }
 	]
 
 },
 {
 	q: "2.Access to Healthcare: Imagine you have a friend who doesn't feel well, but their family doesn't have money to go to the doctor. What do you think your friend should do?",
-	a: [{ text: "They can also visit a local clinic or community health center that provides care regardless of a family's ability to pay. It's important because everyone deserves a chance to get better when they're sick.", isCorrect: false, isSelected: false },
+	a: [{ text: "They can also visit a local clinic or community health center that provides care regardless of a family's ability to pay. It's important because everyone deserves a chance to get better when they're sick.", isCorrect: true, isSelected: false },
 	{ text: "Phuket", isCorrect: false },
 	{ text: "Ayutthaya", isCorrect: false },
-	{ text: "Bangkok", isCorrect: true }
+	{ text: "Bangkok", isCorrect: false }
 	]
 
 },
@@ -49,7 +49,10 @@ const Questions = [{
 ]
 
 let currQuestion = 0
-let score = 0
+
+let optionNumber = 0;
+
+let correctAns = 0;
 
 function loadQues() {
 	const question = document.getElementById("ques")
@@ -101,15 +104,14 @@ function nextQuestion() {
 }
 
 function checkAns() {
-	const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
+	
 
-	if (Questions[currQuestion].a[selectedAns].isCorrect) {
-		score++;
-		console.log("Correct")
-		nextQuestion();
-	} else {
-		nextQuestion();
-	}
+	if (Questions[currQuestion].a[optionNumber].isCorrect) {
+		
+		correctAns = 1;
+		
+	} 
+    window.open("../pages/answer.html","_self");
 }
 function prevQuestion()
 {
@@ -117,4 +119,9 @@ function prevQuestion()
 		currQuestion--;
 		loadQues();
 	} 
+}
+
+function returnOptionNumber(num)
+{
+   optionNumber = num;
 }
