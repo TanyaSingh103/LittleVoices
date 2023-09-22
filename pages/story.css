@@ -2,7 +2,7 @@ body{
     text-align:center;
     margin:10px;
     padding:0px;
-    background-color: rgba(249, 145, 145, 0.601);
+    background-color: rgba(249, 145, 145, 0.781);
 }
 div.navbar{
     display:flex;
@@ -33,7 +33,7 @@ div.main-container{
 div.age-box{
     width:45%;
     height:80%;
-    background-color: rgba(132, 24, 232, 0.692);
+    background-color: rgba(133, 51, 221, 0.601);
 }
 #container-1{
     float:left;
@@ -47,7 +47,7 @@ div.option{
     font-family: "Comic Sans MS";
     font-weight: 570;
     font-size: larger;
-    background-color: rgba(100, 191, 237, 0.8);
+    background-color: rgb(86, 178, 231);
 }
 h1{
     font-family: "Castellar";
