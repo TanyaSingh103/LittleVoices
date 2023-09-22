@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LittleVoices-Stories</title>
+    <link rel="stylesheet" href="try.css" />
+    <style>
+      /* Style for the story pop-up */
+      #story-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        justify-content: center;
+      }
+
+      #story-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 80%;
+        max-height: 80%;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="../assets/Little-Voices-logo.png"
+        alt="Little Voices"
+        id="Logo"
+      />
+      <a href="home">
+        <img src="../assets/home-button.jpg" alt="Home" id="Home" />
+      </a>
+    </div>
+    <h1>Story time for you!</h1>
+    <div class="main-container">
+      <div class="age-box" id="container-1">
+        <h5>Age : 8 - 12 years</h5>
+        <div class="option" id="1-1">Right to Health</div>
+        <div class="option" id="1-2">Right to Protection</div>
+        <div class="option" id="1-3">Right to Development</div>
+        <div class="option" id="1-4">Right to Freedom</div>
+      </div>
+      <div class="age-box" id="container-2">
+        <h5>Age : 12 - 16 years</h5>
+        <div class="option" id="2-1">Right to Health</div>
+        <div class="option" id="2-2">Right to Protection</div>
+        <div class="option" id="2-3">Right to Development</div>
+        <div class="option" id="2-4">Right to Freedom</div>
+      </div>
+    </div>
+
+    <!-- Story Pop-up Container -->
+    <div id="story-popup" onclick="closeStoryPopup(event)">
+      <div id="story-content">
+        <!-- The fetched story content will be displayed here -->
+      </div>
+    </div>
+
+    <script>
+      // Function to show the story pop-up
+      function showStory(rightId) {
+        const storyUrl = rightId + ".html"; // Assuming your story HTML files follow the naming convention
+
+        // Fetch and display the story content
+        fetch(storyUrl)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.text();
+          })
+          .then((story) => {
+            document.getElementById("story-content").innerHTML = story;
+            document.getElementById("story-popup").style.display = "block";
+          })
+          .catch((error) => {
+            console.error("Error fetching story:", error);
+          });
+      }
+
+      // Function to close the story pop-up
+      function closeStoryPopup(event) {
+        if (event.target === document.getElementById("story-popup")) {
+          document.getElementById("story-popup").style.display = "none";
+          document.getElementById("story-content").innerHTML = ""; // Clear the story content
+        }
+      }
+
+      // Attach click event listeners to the options
+      const options = document.querySelectorAll(".option");
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          const rightId = option.id;
+          showStory(rightId);
+        });
+      });
+    </script>
+  </body>
+</html>
