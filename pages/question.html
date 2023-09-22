@@ -11,7 +11,7 @@
 
 <body>
     <div id="nav">
-        <div id="logo" ><img src="../assets/Little Voices-logo.png" alt="hello" width=7%></div>
+        <div id="logo" ><img src="../assets/Little-Voices-logo.png"  width="5%"></div>
         
     </div>
 	<div class="panel">
@@ -20,15 +20,28 @@
 		<div id="ans-image">
             <div id="image"><img src="../assets/mascot1.png" alt="" id="mascot" width="80%" ></div>
             <div id="ans"> 
-                <div id="opt1" onclick="returnOptionNumber(0)" >hello world Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci minima libero, laborum blanditiis officia velit saepe delectus. Nisi commodi maiores vel. Est, obcaecati perspiciatis? Voluptas quibusdam quas molestiae aut similique.</div>
-                <div id="opt2" onclick="returnOptionNumber(1)" >my</div>
-                <div id="opt3" onclick="returnOptionNumber(2)" >na</div>
-                <div id="opt4"  onclick="returnOptionNumber(3)">sid</div>
+                
+                <input type="text"  id="opt1" onclick="returnOptionNumber(1)" value = "my" readonly="readonly">
+                <input type="text"  id="opt2" onclick="returnOptionNumber(1)" value = "my" readonly="readonly">
+                <input type="text"  id="opt3" onclick="returnOptionNumber(1)" value = "my" readonly="readonly">
+                <input type="text"  id="opt4" onclick="returnOptionNumber(1)" value = "my" readonly="readonly">
+              
+        
                 <div id="buttons">
-                    <img src="../assets/Left arrow.jpg" width="30%" alt="" onclick="prevQuestion()" >
+                    <div id="arrow-l" onclick="prevQuestion()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- <img src="../assets/Left arrow.jpg" width="30%" alt="" onclick="prevQuestion()" > -->
                     <button type="button" id="button" onclick="checkAns()">Submit</button>
-                    <img src="../assets/Right arrow.jpg" width="30%" onclick="nextQuestion()" alt="">
-                </div>
+                    <!-- <img src="../assets/Right arrow.jpg" width="30%" onclick="nextQuestion()" alt=""> -->
+                        <div id="arrow-r" onclick="nextQuestion()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                
             </div>
         </div>
            

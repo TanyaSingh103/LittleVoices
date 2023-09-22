@@ -1,6 +1,7 @@
 body {
-	background-color: white;
+	background-color: #D4F1F4;
     margin: 0px;
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -10,7 +11,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: navy;
+	color: black;
 }
 
 .question {
@@ -51,15 +52,12 @@ img{
     
 }
 
-#score {
-	font-size: 30px;
-	color: darkslategray;
-}
 #nav{
-    background-color: yellow;
+    background-color: rgb(0, 81, 181);
     padding: 0px;
     margin: 0px;
     height: 10%;
+    border-bottom-right-radius:  5px;
 }
 
 #logo
@@ -88,41 +86,171 @@ img{
 {
     width: 80%;
     height: 15%;
-    background-color: yellow;
-    margin: 0.5%;
-    border-radius: 10px;
+    background-color: rgb(0, 81, 181);
+    margin: 1%;
+    border-radius : 10px;
     text-align: center;
     cursor: pointer;
 }
-#button {
-    position: relative;
-    overflow: hidden;
+
+
+
+/* animation */
+
+#arrow-l {
+    position:absolute;
+    margin-top: 5%;
+    right: 50%;
+    
+    
+    transform: rotate(90deg);
     cursor: pointer;
-  }
-  
-  #button a {
-    position: relative;
-    transition: all .45s ease-Out;
-  }
-  
-  #translate {
-    transform: rotate(50deg);
-    width: 100%;
-    height: 250%;
-    left: -200px;
-    top: -30px;
-    background: #BFC0C0;
+}
+
+#arrow-l span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+#arrow-l span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+#arrow-l span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+#arrow-r {
     position: absolute;
-    transition: all .3s ease-Out;
-  }
-  
-  #button:hover #translate {
-    left: 0;
-  }
-  
-  #button:hover a {
-    color: #2D3142;
-  }
+   margin-top: 5%;
+    left: 80%;
+    
+    transform: translate(+500%,0);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+#arrow-r span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid rgb(0, 0, 0);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+#arrow-r span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+#arrow-r span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* Animations for buttons */
+#button {
+	margin: auto;
+    margin-top: 10%;
+	border-radius: 20px;
+	background-color: #667292;
+	box-shadow: 10px 15px 40px #36486b;
+	font-size: 30px;
+    height: 100%;
+    width: 50%;
+	
+	
+	font-family: cambria;
+	color: #bccad6;
+	border: none;
+}
+
+#button:hover {
+	border: none;
+	background-color: #8d9db6;
+	opacity: 1;
+	color: #36486b;
+}
 
 
 
+#button:hover {
+	transition: 0.5s ease-in-out;
+	background: #8d9db6;
+}
+
+#button {
+	--color1: #36486b;
+	--color2: #bccad6;
+	font-family: cambria;
+	text-align: center;
+	
+	background: repeating-linear-gradient(
+		45deg,
+		var(--color1),
+		var(--color1) 30px,
+		var(--color2) 30px,
+		var(--color2) 60px
+	);
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: 1000px;
+	}
+}
+
+#opt1,#opt2,#opt3,#opt4{
+    box-shadow: 10px 10px 5px grey;
+    color: black;
+  }
+  #opt1:hover,#opt2:hover,#opt3:hover,#opt4:hover
+  {
+background-color: white;
+  }
+  #opt1:focus,#opt2:focus,#opt3:focus,#opt4:focus
+  {
+    border: 4px solid rgb(255, 255, 255);
+  }
