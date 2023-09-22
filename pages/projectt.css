@@ -18,7 +18,7 @@ body {
   height: 100%;
 }
 .buttons{
-margin: 7% 40%;
+margin: 4% 40%;
 }
 .buttons button{
   
@@ -26,11 +26,11 @@ margin: 7% 40%;
 	width: 17rem;
 	font-size: 1.5rem;
 	font-weight: 550;
-	color: #eedcdc;
-	background: rgb(219, 69, 82);
+	color: #d24848;
+	background: rgb(219, 176, 176);
 	outline: none;
 	cursor: pointer;
-	border: 1px solid #cc0000;
+  border: none;
 	border-radius: 25px;
 	transition: .4s;
   padding-top: 1.2rem;
@@ -39,36 +39,46 @@ margin: 7% 40%;
 .content {
   text-align: center;
   z-index: 1;
-  margin-top: 5rem;
+  margin-top: 0;
   
 }
 
 .textbox {
-  width: 50%;
+  width: 40%;
   height:40px;
   padding: 5px;
-  background-color: #e4e492;
+  background-color: #e1be86;
   margin: auto;
   font-size: x-large;
-  color: black !important;
+  color: rgb(115, 100, 100) !important;
   padding-bottom: 1px;
   padding-top: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight:600;
+  border-radius:1rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
+#logo-div{
+  width:25%;
+  height:25%;
+  margin-top:0.3rem;
+}
+#logo{
+  width:30%;
+  height:40%;
+}
 
 .animate {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #31cd7f 0%,
-    #5749cf 29%,
-    #d422ab 67%,
-    #ded416 100%
+    #700d52 0%,
+    #eb4444 29%,
+    #161663 67%,
+    #a458d3 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -86,6 +96,7 @@ margin: 7% 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes textclip {
@@ -96,9 +107,9 @@ margin: 7% 40%;
 
 #footer {
   position: absolute;
-  bottom: 0.4rem;
-  color: red;
-  background-color: white;
+  bottom: 0;
+  color: rgb(216, 199, 199);
+  background-color: rgb(221, 78, 78);
   width: 100vw;
   padding: 0;
   display: flex;
