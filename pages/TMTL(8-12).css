@@ -1,3 +1,21 @@
+/* Style for the popup container */
 body {
-  background-color: palegoldenrod;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+h1,
+p {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Drop shadow */
+  text-align: center;
+}
+
+/* Additional styles as needed */
