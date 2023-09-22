@@ -128,7 +128,7 @@ margin: 4% 40%;
   border: none;
   height: 5%;
 	width: 10rem;
-	font-size: 1.1rem;
+	font-size: 1.6rem;
   color:bisque;
 }
 .footer2 {
@@ -140,7 +140,7 @@ margin: 4% 40%;
   border: none;
   height: 5%;
 	width: 10rem;
-	font-size: 1.1rem;
+	font-size: 1.6rem;
   color:bisque;
 }
 #about,#contact {
@@ -154,14 +154,21 @@ margin: 4% 40%;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
+}
+.footer1:hover{
   cursor: pointer;
+  color:black;
+}
+.footer2:hover{
+  cursor: pointer;
+  color:black;
 }
 
 #text,#text1{
   position: absolute;
-  top: 30%;
-  left: 40%;
-  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  font-size: 1.8rem;
   font-weight: 300;
   color: white;
   transform: translate(-50%,-50%);
