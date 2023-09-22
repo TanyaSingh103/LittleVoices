@@ -2,6 +2,7 @@ body{
     text-align:center;
     margin:10px;
     padding:0px;
+    background-color: rgba(249, 145, 145, 0.601);
 }
 div.navbar{
     display:flex;
@@ -32,14 +33,22 @@ div.main-container{
 div.age-box{
     width:45%;
     height:80%;
+    background-color: rgba(132, 24, 232, 0.692);
 }
 #container-1{
     float:left;
+    
 }
 #container-2{
     float:right;
 }
-
+div.option{
+    /* font-family: "Georgia";  */
+    font-family: "Comic Sans MS";
+    font-weight: 570;
+    font-size: larger;
+    background-color: rgba(100, 191, 237, 0.8);
+}
 h1{
     font-family: "Castellar";
     /* font-family: "Bookman Old Style"; */
@@ -47,10 +56,4 @@ h1{
 h5{
     font-size: x-large;
     font-family: "Castellar";
-}
-div.option{
-    /* font-family: "Georgia";  */
-    font-family: "Comic Sans MS";
-    font-weight: 570;
-    font-size: larger;
 }
