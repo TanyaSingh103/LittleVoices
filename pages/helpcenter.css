@@ -29,6 +29,10 @@ body{
     width: 4rem;
     left: 1.3rem;
     cursor: pointer;
+    transition:transform infinite ease-in 0s;
+}
+#home-logo:hover{
+    transform:scale(1.2);
 }
 
 #row-2 {
@@ -129,3 +133,38 @@ body{
     background-color:rgba(191, 214, 168, 0.8);
     border-radius: 1rem;
   }
+
+  .website{
+    display:flex;
+    margin:0.5rem;
+    margin-top:0;
+  }
+
+  .website-logo{
+    height:2.1rem;
+    margin-right:1.6rem;
+  }
+
+  .phone{
+    display:flex;
+    margin:0.5rem;
+    margin-top:0;
+  }
+
+  .phone-logo{
+    height:1.9rem;
+    margin-right:1.6rem;
+  }
+  .mail{
+    display:flex;
+    margin:0.5rem;
+    margin-top:0;
+  }
+
+  .mail-logo{
+    height:1.9rem;
+    margin-right:1.6rem;
+  }
+
+
+ 
