@@ -1,0 +1,73 @@
+body {
+    background-image: url(../assets/story3.jpeg);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(249, 145, 145, 0.781);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  div.navbar {
+    display: flex;
+    justify-content: space-between;
+    border:none;
+    margin: 0px;
+    padding: 10px;
+    
+  }
+  img {
+    width: 5%;
+    margin: 0px;
+    padding: 0px;
+  }
+  #Home {
+    float: right;
+    width:20%;
+    transition: transform infinite ease-in 0s;
+  }
+  #Home:hover{
+    transform:scale(1.2);
+  }
+  #logo {
+    float: left;
+  }
+  div {
+    border: 2px solid black;
+    margin: 55px;
+    padding: 35px;
+  }
+  div.main-container {
+    border: none;
+    display: flex;
+    height:
+  }
+  div.age-box {
+    padding:60px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(24, 193, 187);
+    
+    border-radius : 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgba(93, 93, 93, 0.876);
+    color: black;
+  }
+  .age-box:hover{
+    background-color: rgb(92, 215, 207);
+  }
+  #container-1 {
+    float: left;
+  }
+  #container-2 {
+    float: right;
+  }
+  
+  h1 {
+    font-family: "Castellar";
+    font-size:3.5rem;
+  }
+  h5 {
+    font-size: x-large;
+    font-family: "Castellar";
+  }
+  
