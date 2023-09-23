@@ -15,34 +15,15 @@
 
     <div id="row-1">
         <div class="container">
-            <img src="../assets/cry.jpg" alt="quiz" height="50%" width="50%" class="photo">
-            <div class="middle">
-                <div class="text">
-                    LEARN
-                </div>
-            </div>
+            <img src="../assets/cry.jpg" alt="quiz" height="50%" width="50%" class="photo" onclick="cry_on()">
         </div>
-<div class="container">
-    <img src="../assets/arpan.jpg" alt="quiz" 
-        class="photo">
-    <div class="middle">
-        <div class="text">
-            LEARN
+        <div class="container">
+            <img src="../assets/arpan.jpg" alt="quiz" class="photo" onclick="arpan_on()">
+        </div>
+        <div class="container whitehai" >
+            <img src="../assets/childline1098.jpg" alt="quiz" class="photo" onclick="childline_on()">
         </div>
     </div>
-</div>
-
-<div class="container whitehai" >
-    <img src="../assets/childline1098.jpg" alt="quiz" 
-        class="photo">
-    <div class="middle">
-        <div class="text">
-            LEARN
-        </div>
-    </div>
-</div>
-
-</div>
 
 <div >
 <a href="index.html"><img src="../assets/icon-home.png" alt="home" id="home-logo"></a> 
@@ -50,30 +31,101 @@
 
 <div id="row-2">
     <div class="container whitehai container2">
-        <img src="../assets/bba.jpg" alt="quiz" 
-            class="photo">
-        <div class="middle">
-            <div class="text">
-                LEARN
-            </div>
-        </div>
+        <img src="../assets/bba.jpg" alt="quiz" class="photo" onclick="bba_on()">
     </div>
 
     <div class="container container2">
-        <img src="../assets/ncpcr.jpg" alt="quiz" 
-            class="photo">
-        <div class="middle">
-            <div class="text">
-                LEARN
-            </div>
-        </div>
+        <img src="../assets/ncpcr.jpg" alt="quiz" class="photo" onclick="ncpcr_on()">
     </div>
-
-
 </div>
-
 </div>
-
+<div id="about" onclick="cry_off()">
+    <div id="text">
+        <h2>ABOUT US:</h2>
+        <p>Our vision is a happy, healthy and creative child whose rights are protected and honoured in a society that is built on respect for dignity, justice and equity for all.</p>
+        <h2>CONTACT US:</h2>
+        <p>https://www.cry.org/</p>
+        <p>+919115911500</p>
+        <p>cryinfo.mum@crymail.org</p>
+    </div>
+</div>
+<div id="about1" onclick="arpan_off()">
+    <div id="text1">
+        <h2>ABOUT US:</h2>
+        <p>We aim to educate you about personal safety so you can easily identify and seek help in an unsafe situation.</p>
+        <h2>CONTACT US:</h2>
+        <p>http://www.arpanelearn.com/</p>
+        <p>+919819086444</p>
+        <p>info@arpan.org.in</p>
+    </div>
+</div>
+<div id="about2" onclick="childine_off()">
+    <div id="text2">
+        <h2>ABOUT US:</h2>
+        <p>Childline 1098 is a general emergency child helpline where you can talk to us about any issue you are facing.</p>
+        <h2>CONTACT US:</h2>
+        <p>https://www.childlineindia.org/</p>
+        <p>+91-22-68251098</p>
+        <p>dial1098@childlineindia.org.in</p>
+    </div>
+</div>
+<div id="about3" onclick="bba_off()">
+    <div id="text3">
+        <h2>ABOUT US:</h2>
+        <p>Contact us with complaints regarding child labour, child marriage, sexual abuse/sexual trafficking etc.</p>
+        <h2>CONTACT US:</h2>
+        <p>https://bba.org.in/</p>
+        <p>011–49211111</p>
+        <p>info@bba.org.in</p>
+    </div>
+</div>
+<div id="about4" onclick="ncpcr_off()">
+    <div id="text4">
+        <h2>ABOUT US:</h2>
+        <p>Our vision is a happy, healthy and creative child whose rights are protected and honoured in a society that is built on respect for dignity, justice and equity for all.</p>
+        <h2>CONTACT US:</h2>
+        <p>https://ncpcr.gov.in/</p>
+        <p>011-23724026</p>
+        <p>ms.ncpcr@nic.in</p>
+    </div>
+</div>
+<script>
+    function cry_on() {
+      document.getElementById("about").style.display = "block";
+    }
+    
+    function cry_off() {
+      document.getElementById("about").style.display = "none";
+    }
+    function arpan_on() {
+      document.getElementById("about1").style.display = "block";
+    }
+    
+    function arpan_off() {
+      document.getElementById("about1").style.display = "none";
+    }
+    function ncpcr_on() {
+      document.getElementById("about4").style.display = "block";
+    }
+    
+    function ncpcr_off() {
+      document.getElementById("about4").style.display = "none";
+    }
+    function bba_on() {
+      document.getElementById("about3").style.display = "block";
+    }
+    
+    function bba_off() {
+      document.getElementById("about3").style.display = "none";
+    }
+    function childline_on() {
+      document.getElementById("about2").style.display = "block";
+    }
+    
+    function childline_off() {
+      document.getElementById("about2").style.display = "none";
+    }
+</script>
 </body>
 
 </html>
