@@ -179,4 +179,9 @@ margin: 4% 40%;
   padding:2%;
   background-color:rgba(234, 200, 127, 0.8);
   border-radius: 1rem;
+  margin:auto;
+}
+
+.mail{
+  margin-bottom: 1rem;
 }
