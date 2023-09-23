@@ -47,8 +47,6 @@ body{
    
 }
 
-
-
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -78,7 +76,7 @@ transform:scale(1.4) translateX(-7rem) translateY(-2rem)  ;
     /*background-color: rgb(59, 161, 161); */
     background-color:transparent;
     color: black;
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:bolder;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:1rem;
