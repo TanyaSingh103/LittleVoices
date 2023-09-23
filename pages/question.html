@@ -11,20 +11,20 @@
 
 <body>
     <div id="nav">
-        <div id="logo" ><img src="../assets/Little-Voices-logo.png"  width="5%"></div>
+        
+       <a href="../pages/index-2.html"> <img src="../assets/home_icon_1.png" id = "home" alt=""></a>
+        <img src="../assets/Little-Voices-logo.png"  id = "logo">
         
     </div>
 	<div class="panel">
-		<h1>Scenario based questions</h1>
+		<h1 id="heading">Scenario based questions</h1>
 		<div class="question" id="ques"></div>
 		<div id="ans-image">
             <div id="image"><img src="../assets/mascot1.png" alt="" id="mascot_pose_1" width="80%" ></div>
             <div id="ans"> 
-                
-                <input type="text"  id="opt1" onclick="returnOptionNumber(0)"  readonly="readonly">
-                <input type="text"  id="opt2" onclick="returnOptionNumber(1)" readonly="readonly">
-                <input type="text"  id="opt3" onclick="returnOptionNumber(2)"  readonly="readonly">
-                <input type="text"  id="opt4" onclick="returnOptionNumber(3)"  readonly="readonly">
+
+                <textarea type="text"  id="opt1" onclick="returnOptionNumber(0)" readonly="readonly"></textarea>
+                <textarea type="text"  id="opt2" onclick="returnOptionNumber(1)" readonly="readonly"></textarea>
               
         
                 <div id="buttons">
@@ -49,9 +49,10 @@
 	</div>
     <div id="answers" onclick="offClick()">
         <div id="right_wrong"></div>
-        <div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error. Iusto, sed. Aperiam culpa adipisci qui sequi, pariatur beatae porro autem blanditiis nobis ullam deserunt dicta, quos omnis, soluta voluptates!</div>
-        <div id="mascot-image">
+        
+        <div id="text_image">
             <img src="../assets/mascot1pose2.png" alt="" id="mascot_pose_2">
+            <div id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error. Iusto, sed. Aperiam culpa adipisci qui sequi, pariatur beatae porro autem blanditiis nobis ullam deserunt dicta, quos omnis, soluta voluptates!</div>
             
         </div>
     </div>
