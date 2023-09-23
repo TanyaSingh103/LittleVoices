@@ -165,12 +165,17 @@ margin: 4% 40%;
 }
 
 #text,#text1{
+  font-family:monospace;
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 300;
-  color: white;
+  color: rgb(11, 1, 1) !important;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  border: 2px solid black;
+  margin:1%;
+  padding:2%;
+  background-color:#dedbb7;
 }
