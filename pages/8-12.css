@@ -21,8 +21,11 @@ body {
 
 .question {
 	font-size: 25px;
+    width: 80%;
+    font-weight: bold;
 	
 }
+
 
 .options {
 	font-size: 20px;
@@ -43,8 +46,7 @@ img{
 }
 #home
 {
-    width: 6rem;
-    height:70%;
+    width: 4.5rem;
 
 }
 #logo
@@ -150,13 +152,21 @@ img{
 {
     display: flex;
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 5%;
 }
 #text
 {
     margin: 5%;
+    margin-top: 10%;
     color: white;
+}
+#right
+{
+    color: white;
+    position: absolute;
+    font-size: 45px;
+    left: 50%;
 }
 #right_wrong
 {
