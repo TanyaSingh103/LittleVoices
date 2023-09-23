@@ -43,6 +43,10 @@ div.age-box {
   width: 45%;
   height: 80%;
   background-color: rgba(133, 51, 221, 0.601);
+
+  border-radius : 10px;
+  box-shadow: 10px 10px 5px rgba(93, 93, 93, 0.876);
+  color: black;
 }
 #container-1 {
   float: left;
@@ -57,8 +61,11 @@ div.option {
   font-size: larger;
   background-color: rgb(86, 178, 231);
   cursor:pointer;
-  border-radius: 10%;
+  /* border-radius: 10%; */
   transition: transform infinite ease-in 0s;
+  border-radius : 10px;
+  box-shadow: 7px 7px 5px rgba(70, 69, 69, 0.876);
+  color: black;
 }
 div.option:hover{
   transform:scale(1.1);
@@ -66,7 +73,7 @@ div.option:hover{
 
 h1 {
   font-family: "Castellar";
-  font-size:2.3rem;
+  font-size:3rem;
   /* font-family: "Bookman Old Style"; */
 }
 h5 {
