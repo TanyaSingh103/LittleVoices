@@ -20,7 +20,7 @@ img {
   padding: 0px;
 }
 #Home {
-  float: right;
+  float: left;
   width:20%;
   transition: transform infinite ease-in 0s;
 }
